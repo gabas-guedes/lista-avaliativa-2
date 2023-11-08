@@ -15,18 +15,16 @@ int main()
     int m1 = 7, m2 = 8;
     int a1 = 9, a2 = 10;
 
-    // ler entrada dos 2 times
     for (int i = 0; i < 2; i++)
     {
-        // resetar vetor de forca
+
         for (int i = 0; i < 11; i++)
         {
             forcas[i] = 0;
         }
 
-        // fgets armazena tbm o ENTER depois que vc digita
         fgets(time[i], 30, stdin);
-        // essa linha de baixo remove esse enter
+
         time[i][strcspn(time[i], "\n")] = 0;
 
         for (int j = 0; j < 11; j++)
@@ -39,7 +37,7 @@ int main()
 
             if (*posicao == 'G')
             {
-                forcas[g] = atoi(forca); // pega ponteiro e transforma em int
+                forcas[g] = atoi(forca);
             }
             else if (*posicao == 'L')
             {
